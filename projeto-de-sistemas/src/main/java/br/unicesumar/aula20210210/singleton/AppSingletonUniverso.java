@@ -10,9 +10,11 @@ public class AppSingletonUniverso {
 
         for (int i = 0; i < 5; i++) {
             //Universo u = new Universo();
-            Universo u = Universo.getInstance();
-            System.out.println(u.toString());            
+            //Universo u = Universo.getInstance();
+            //System.out.println(u.toString());            
+            System.out.println(Universo.getVersion());
         }
+        Universo.getInstance();
 
     }
 
