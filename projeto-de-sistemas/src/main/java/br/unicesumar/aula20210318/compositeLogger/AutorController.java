@@ -5,7 +5,7 @@ import br.unicesumar.aula20210224.factoryLogger.MyLogger;
 import br.unicesumar.aula20210224.factoryLogger.MyLoggerConsole;
 
 public class AutorController {
-    private MyLogger logger = new MyLoggerConsole(); //inicializar com NullLogger
+    private MyLogger logger = new NullLogger(); //inicializar com NullLogger
 
 
     public void setLogger(MyLogger logger) {

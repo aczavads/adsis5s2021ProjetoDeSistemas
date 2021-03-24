@@ -17,6 +17,9 @@ public class MotorComposite extends Motor {
     }
 
     public void addMotor(Motor motorParaCompor) {
+    	if (motorParaCompor == this) {
+    		throw new RuntimeException("Não é permitido vincular um MotorComposite a si mesmo!");
+    	}
         this.motores.add(motorParaCompor);
     }
 

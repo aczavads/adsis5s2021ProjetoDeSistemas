@@ -12,6 +12,7 @@ public class AppComposite {
         motorComposite.addMotor(new Fiasa1000cc());
         motorComposite.addMotor(new Fiasa1000cc());
         motorComposite.addMotor(new Fiasa1000cc());
+        motorComposite.addMotor(motorComposite);
 
         //meuCarro.setMotor(new Fiasa1000cc());
         meuCarro.setMotor(motorComposite);
