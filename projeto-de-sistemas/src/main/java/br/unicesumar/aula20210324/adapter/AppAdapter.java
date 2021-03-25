@@ -11,7 +11,7 @@ public class AppAdapter {
 
         //Estudem o pattern Adapter e apliquem nesta vinculação 
         //entre o AutorController e o SuperLogger.
-        controller.setLogger(superLogger);
+        controller.setLogger(new SuperLoggerToMyLoggerAdapter(superLogger));
 
         controller.getVersion();
     }

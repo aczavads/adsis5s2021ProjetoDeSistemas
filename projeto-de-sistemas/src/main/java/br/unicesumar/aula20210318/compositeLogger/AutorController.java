@@ -2,7 +2,6 @@ package br.unicesumar.aula20210318.compositeLogger;
 
 
 import br.unicesumar.aula20210224.factoryLogger.MyLogger;
-import br.unicesumar.aula20210224.factoryLogger.MyLoggerConsole;
 
 public class AutorController {
     private MyLogger logger = new NullLogger(); //inicializar com NullLogger
