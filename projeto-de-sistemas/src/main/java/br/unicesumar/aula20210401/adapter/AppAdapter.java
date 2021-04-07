@@ -8,12 +8,10 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 
 public class AppAdapter {
-
     public static void main(String[] args) {
         AppAdapter app = new AppAdapter();
         app.show();
     }
-
     private void show() {
         JDialog dialog = new JDialog();
         dialog.setSize(120,100);
@@ -40,6 +38,4 @@ public class AppAdapter {
             System.out.println(LocalDate.now().toString());
         }
     }
-
-
 }
