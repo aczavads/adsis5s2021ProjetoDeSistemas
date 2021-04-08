@@ -23,8 +23,16 @@ public class AppComObserver {
         //visa4486.habilitarSMS("(44) 99984-1234");
         //visa4486.habilitarEmail("arthur.zavadski@unicesumar.edu.br");
 
-        visa4486.setListener(listener);
-        visa4486.setListener(new NotificadorDeDébitoViaSMS("(44) 99984-1234"));
+        //visa4486.setListener(listener);
+        //visa4486.setListener(new NotificadorDeDébitoViaEmail("arthur.zavadski@unicesumar.edu.br"));
+        //visa4486.setListener(new NotificadorDeDébitoViaSMS("(44) 99984-1234"));
+        CartãoDeCréditoListenerComposite composite = new CartãoDeCréditoListenerComposite(
+            listener, 
+            new NotificadorDeDébitoViaEmail("arthur.zavadski@unicesumar.edu.br"),
+            new NotificadorDeDébitoViaSMS("(44) 99984-1234")
+        );
+
+        visa4486.setListener(composite);
 
         visa4486.debitar(500.00);
         visa4486.debitar(500.00);
